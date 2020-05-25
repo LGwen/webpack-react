@@ -15,14 +15,14 @@ module.exports = merge(common, {
         //Be possible go back pressing the "back" button at chrome
         historyApiFallback: true,
         noInfo: false,
-        before(app) {
-            apiMocker(app, path.resolve(__dirname, '../', 'mocker/api.js'), {
-                proxy: {
-                    '/api/*': 'https://api.github.com/',
-                },
-                changeHost: true,
-            });
-        },
+        // before(app) {
+        //     apiMocker(app, path.resolve(__dirname, '../', 'mocker/api.js'), {
+        //         proxy: {
+        //             '/api/*': 'https://api.github.com/',
+        //         },
+        //         changeHost: true,
+        //     });
+        // },
         watchOptions: {
             poll: false
         },
