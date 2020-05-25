@@ -1,0 +1,19 @@
+﻿npm i
+npm start
+
+//可能报错处理方法
+cannot read property 'shape' of undefined
+npm/yarn install prop-types create-react-class --save
+
+//然后进入node_modules/react/index.js文件，在代码后加上如下代码
+
+module.exports.PropTypes = require('prop-types');
+var createClass = null;
+Object.defineProperty(module.exports, 'createClass', {
+    get: function() {
+        if (!createClass) {
+        createClass = require('create-react-class').bind(module.exports);
+        }
+        return createClass;
+    }
+});

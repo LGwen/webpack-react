@@ -1,0 +1,85 @@
+﻿body{
+    margin: 0;
+    padding: 0;
+}
+.page{
+    padding: 40px;
+}
+.switch-wrapper {
+    position: relative;
+}
+
+.switch-wrapper > div {
+    position: absolute;
+}
+.list-container{
+    
+    width: 500px;
+    margin: 20px;
+    border: 1px solid #eee;
+}
+
+.list-item:hover{
+    background: #808080 !important;
+    color: #fff !important;
+}
+.list-item{
+    padding: 8px 10px;
+    position: relative;
+    margin-top: 1px;
+}
+.input-container{
+    background: #b34747;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0;
+}
+.input-container input{
+    height: 32px;
+    line-height: 32px;
+    border: 0;
+    background: #fff;
+    width: 300px;
+    vertical-align: middle;
+    font-size: 14px;
+    padding: 0 10px;
+}
+.add{
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    vertical-align: middle;
+    font-size: 14px;
+    background: #eee; 
+    padding: 0 32px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    color: #b34747;
+}
+.add:active{
+    opacity: 0.85;
+}
+.list-item:nth-of-type(odd){
+    background: #eee;
+}
+.delete:hover{
+    background: #b34747;
+    color: #fff;
+}
+.delete{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 80px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-item{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
